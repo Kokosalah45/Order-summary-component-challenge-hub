@@ -1,0 +1,22 @@
+body{
+    font-family: var(--ff-primary); 
+    font-size: var(--fs-primary);
+    display: flex;
+    justify-content:center;
+    align-items: center;
+    min-height: 100vh;
+    background-color: var( --clr-primary-100 );
+    padding: 0 1em;
+    &::before{
+        content: "";
+        position: absolute;
+        background:url(../../../images/pattern-background-desktop.svg) ;
+        background-size : cover;
+        z-index: -1;
+        height: 90vh;
+        
+        top : -45vh;
+        left : 0;
+        right : 0;
+    }
+}
